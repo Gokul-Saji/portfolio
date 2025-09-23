@@ -1045,7 +1045,7 @@ h3 {
 
 /* line 124, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
-  background: #D465EF;
+  background: #615CFD;
   padding: 12px 26px;
   font-size: 14px;
   font-weight: 500;
@@ -1638,24 +1638,29 @@ h3 {
 
 /* line 180, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text span {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   color: #FFFFFF;
   position: relative;
   z-index: 1;
 }
 
-/* line 186, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
-.slider_area .single_slider .slider_text span::before {
-  position: absolute;
-  background: #fff;
-  width: 50px;
-  height: 2px;
-  content: '';
-  left: -67px;
-  top: 50%;
-  margin-bottom: -1px;
+.slider_area .single_slider .slider_text span {
+    position: relative;
+    padding-left: 60px; /* space for line */
 }
+
+.slider_area .single_slider .slider_text span::before {
+    position: absolute;
+    background: #fff;
+    width: 50px;
+    height: 2px;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 180, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
